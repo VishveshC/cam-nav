@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+.con {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.con :first-child:hover {
+    cursor: pointer;
+}
+.frame {
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: subgrid;
+    width: 100vw;
+    height: 100vh;
+}
+p {
+    top: 50px;
+    left: 200px;
+    position: absolute;
+    z-index: 2;
+    font-size: 50px;
+    transition: transform 0.3s;
+}
+.two {
+    left: calc(100vw - 400px) !important; 
+    transition: transform 0.3s;
+}
+p:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
